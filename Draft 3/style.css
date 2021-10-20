@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
 
 body {
-    /*font-family: 'Open Sans', sans-serif;*/
-   /* font-family: 'Merriweather', serif; */
-   font-family: 'Eczar', serif; 
-    font-weight: 400; 
-    background: #FDFEFE;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    background: white;
     overflow: hidden;
 }
 
@@ -16,24 +14,22 @@ body.switched {
 h1,
 h2 {
     text-align: center;
-   /* font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif; */
-    font-family: 'Cinzel', serif;
+    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-   /* font-size: 30pt;
-    margin-bottom: 10px;*/
-   
+    font-size: 30pt;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 12pt;
+    font-size: 14pt;
     font-style: italic;
-    font-family: 'Spartan', sans-serif;
-    font-weight: lighter; 
-    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #BBB;
 }
 
 .header {
@@ -58,7 +54,7 @@ h2 {
     position: fixed;
     display: block;
     width: 100%;
-    background: #FDFEFE;
+    background: white;
     transition: color 0.6s, background 0.6s;
     margin: 0;
     padding-top: 6px;
@@ -101,8 +97,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    padding-bottom: 1em;
-    background: #FDFEFE;
+    background: white;
 }
 
 .switched .container {
@@ -110,30 +105,27 @@ h2 {
 }
 
 p {
-    font-size: 14pt;
-    color: #212121;
-    line-height: 1.9em;
-    font-weight: 400;
+    font-size: 13pt;
+    color: #888;
+    line-height: 1.7em;
+    font-weight: lighter;
 }
 
 a {
-    font-weight: 600;
-   /* color: #b97c2c;*/
-    color: #2471A3;
-  /*  font-family: 'Montserrat Alternates', sans-serif; */
-    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    color: #b97c2c;
+    font-family: sans-serif;
     transition: color 0.6s;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
-   /* color: black; */
-    color: #154360;
+    color: black;
     transition: color 0.1s;
 }
 
 strong {
-    color: #212121;
+    color: black;
     font-weight: bold;
 }
 
@@ -177,9 +169,6 @@ img {
 */
 .choice a {
     font-size: 15pt;
-    line-height: inherit;
-    padding-top: 30px;
-    padding-bottom: 50px;
 }
 
 /* 
@@ -189,10 +178,9 @@ img {
 .end {
     text-align: center;
     font-weight: bold;
-    color: #212121;
+    color: black;
     padding-top: 20px;
     padding-bottom: 20px;
-    line-height: inherit;
 }
 
 #controls {
@@ -204,7 +192,7 @@ img {
     right: 14px;
     top: 4px;
     user-select: none;
-    background: #FDFEFE;
+    background: white;
     transition: color 0.6s, background 0.6s;
 }
 
@@ -232,15 +220,8 @@ img {
 */
 
 body.dark {
-    background: #212121;
-    color: #FDFEFE;
-}
-
-.dark p {
-    font-size: 14pt;
-    color: #D5DBDB;
-    line-height: inherit;
-    font-weight: 400;
+    background: black;
+    color: white;
 }
 
 .dark h2 {
@@ -248,29 +229,24 @@ body.dark {
 }
 
 .dark .container {
-    background: #212121;
+    background: black;
 }
 
 .dark .written-in-ink {
-    background: #212121;
+    background: black;
 }
 
 .dark a {
-    font-weight: 600;
-   /* color: #b97c2c;*/
-   /* color: #117A65;*/
-    color: #7FB3D5;
-    font-family: 'Spartan', sans-serif;
+    color: #cc8f1a;
     transition: color 0.6s;
-    text-decoration: underline;
 }
 
 .dark a:hover {
-    color: #EAF2F8;
+    color: white;
 }
 
 .dark strong {
-    color: #FDFEFE;
+    color: white;
 }
 
 .dark #controls [disabled] {
@@ -278,92 +254,9 @@ body.dark {
 }
 
 .dark .end {
-    color: #FDFEFE;
+    color: white;
 }
 
 .dark #controls {
-    background: #212121;
-}
-
-/* My own classes. */ 
-
-.dark .time {
-    font-family: 'Spartan', sans-serif;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 12pt;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-style: italic;
-    color: gray;
-}
-
-.dark .chapter {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    margin: 0;
-    padding: 0;
-    font-size: 20pt;
-    margin-bottom: 10px;
-    margin-top: 50px;
-}
-
-.time {
-    font-family: 'Spartan', sans-serif;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 12pt;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-style: italic;
-    color: gray;
-}
-
-.chapter {
-    text-align: center;
-    font-family: 'Cinzel', serif;
-    margin: 0;
-    padding: 0;
-    font-size: 20pt;
-    margin-bottom: 10px;
-    margin-top: 50px;
-}
-
-.hide {
-    display: none;
-}
-
-.hankel {
-    font-family: 'Eczar', serif;
-    text-align: center;
-    font-size: 90pt;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    line-height: 1;
-}
-
-.the {
-    text-align: center;
-    font-family: 'Spartan', sans-serif;
-    font-size: 30pt;
-    font-weight: lighter;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    line-height: 1;
-}
-
-.hero {
-    text-align: center;
-    font-family: 'Cinzel', serif; 
-    font-size: 80pt;
-    padding: 0;
-    margin: 0; 
-    font-weight: 700;
-    height: auto;
-    line-height: 1;
-    margin-bottom: 15px;
+    background: black;
 }
